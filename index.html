@@ -1,0 +1,25 @@
+<html>
+<head><title>Demo</title></head>
+<style>
+#gum-local{
+	width:400px;
+}
+</style>
+<body>
+<div id="container">
+    <center><h1>
+        <span>getUserMedia</span></h1>
+
+    <video id="gum-local" autoplay playsinline></video><br><br>
+    <button id="showVideo">Open camera</button>
+
+    <div id="errorMsg"></div>
+    <p>Display the video stream from <code>getUserMedia()</code> in a video element.</p>
+
+    <p>The <code>MediaStream</code> object <code>stream</code> passed to the <code>getUserMedia()</code> callback is in
+        global scope, so you can inspect it from the console.</p></center>
+</div>
+<script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
